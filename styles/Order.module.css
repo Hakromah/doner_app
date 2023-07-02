@@ -1,0 +1,164 @@
+.container {
+	display: flex;
+	padding: 30px;
+}
+
+.left {
+	flex: 2;
+}
+
+.right {
+	flex: 1;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+/* left part */
+.section {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.tr {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.trItems {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: flex-start;
+}
+
+.row:last-child {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.done {
+	display: flex;
+	flex-direction: column;
+}
+
+.inProgress {
+	display: flex;
+	flex-direction: column;
+	animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.undone {
+	display: flex;
+	flex-direction: column;
+	opacity: 0.3;
+}
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+	display: none;
+}
+/* Right part */
+.wrapper {
+	width: 90%;
+	max-height: 300px;
+	background-color: #333;
+	padding: 50px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+}
+
+.totalTextTitle {
+	margin-right: 20px;
+}
+
+.button {
+	height: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 20px;
+	background-color: #fff;
+	color: teal;
+	cursor: not-allowed;
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.trItems {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.tr {
+		display: none;
+	}
+
+	.name,
+	.total {
+		font-size: 24px;
+	}
+
+	.id::before {
+		content: "ID: ";
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.name::before {
+		content: "Name: ";
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.address {
+		font-size: 18px;
+	}
+	.address::before {
+		content: "Address: ";
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.total::before{
+		content: "Total: ";
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.wrapper {
+		width: 100%;
+		padding-right: 20px;
+	}
+
+	.row:last-child {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 15px;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.trItems {
+		align-items: start;
+	}
+}

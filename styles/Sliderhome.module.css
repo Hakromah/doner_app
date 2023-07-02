@@ -1,0 +1,33 @@
+.container {
+	height: calc(100vh - 100px);
+	background-color: #11a8e8;
+	overflow: hidden;
+	position: relative;
+}
+.arrowContainer {
+	position: absolute;
+	width: 10%;
+	height: 20%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+}
+.textArea {
+	max-width: 500px;
+	left: 100px;
+}
+.wrapper {
+	transition: all 1.5s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		height: 65vh;
+	}
+
+	.textArea {
+		max-width: 300px;
+		left: 50px;
+	}
+}

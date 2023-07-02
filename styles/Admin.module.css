@@ -1,0 +1,62 @@
+.container {
+	padding: 30px;
+	display: flex;
+	margin: 20px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border: 1px solid black;
+}
+
+.trTitleTop {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.tdTitleTop {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+	text-align: center;
+}
+
+.button {
+	border: 1px solid lightslategray;
+	margin-right: 5px;
+	color: white;
+	border-radius: 10px;
+}
+
+.button:first-child {
+	background-color: teal;
+}
+.button:nth-child(2) {
+	background-color: crimson;
+}
+
+/* second table */
+.trTitleDown {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.tdTitleDown {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	margin-top: 15px;
+}
