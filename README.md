@@ -1,8 +1,8 @@
 
 TO RUN THE APP:
 1- CLONE THE REPO
-2- apply $npm install in the Terminal to install all the packages used in the project.
-3 - $ npm run start  will run the code on port:3000
+2- apply "$npm install" in the Terminal to install all the packages used in the project.
+3 - "$ npm run dev"  will run the code on port:3000
 4- refresh the page because sometime Axios fails to fetch the data from MongoDB in the first run.
 
 
